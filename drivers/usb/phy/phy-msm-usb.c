@@ -3414,6 +3414,7 @@ static void msm_otg_sm_work(struct work_struct *w)
 #else
 					msm_otg_notify_charger(motg,
 							IDEV_CHG_MAX);
+#endif
 					otg->phy->state =
 						OTG_STATE_B_CHARGER;
 					work = 0;
