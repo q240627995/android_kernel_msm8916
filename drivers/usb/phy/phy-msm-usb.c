@@ -3409,7 +3409,6 @@ static void msm_otg_sm_work(struct work_struct *w)
 					} else {
 						msm_otg_notify_charger(motg,
 								IDEV_CHG_MAX);
-#endif
 					}
 #else
 					msm_otg_notify_charger(motg,
