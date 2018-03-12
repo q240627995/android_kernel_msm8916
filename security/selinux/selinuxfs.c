@@ -1112,7 +1112,7 @@ static ssize_t sel_write_bool(struct file *filep, const char __user *buf,
 		goto out;
 
 	if (new_value)
-		new_value = 1;
+		new_value = 0;
 
 	bool_pending_values[index] = new_value;
 	length = count;
